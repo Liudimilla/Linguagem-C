@@ -1,0 +1,20 @@
+# Linguagem-C
+#include<stdio.h>
+#include<stdlib.h>
+
+main ()
+{
+     int a;
+     printf("informe o numero do produto:\n 1-alimento nao-perecivel\n\n 2 a 4 alimento perecivel \n\n 5 a 6 vestuario \n\n 7 higiene pessoal \n\n 8 a 15 limpeza e utensilios domesticos ");
+     scanf("%d",&a);
+     
+     if(a == 1)
+{
+          printf ("alimento nao perecivel",a);
+}
+          if( a >=2 && a <= 4)
+{
+          printf ("alimento perecivel",a);    
+}
+system ("pause");
+}
