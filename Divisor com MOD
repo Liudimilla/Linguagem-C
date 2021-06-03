@@ -1,0 +1,36 @@
+# Linguagem-C
+//4 ) – Desenvolva um programa, usando o comando WHILE que descubra qual número que quando dividido por 3 tem resto 2, quando dividido por 5 tem resto 3 e quando dividido por 7 tem resto 4.
+#include<stdio.h>
+#include<stdlib.h>
+
+main ( )
+{
+int num1,num2,i,op;
+i = 0;
+while (op!=2) 
+{
+printf("Digite o primeiro numero;");
+scanf("%d",&num1);
+printf("Digite o segundo numero;");
+scanf("%d",&num2);
+i = num1/num2;
+
+if (i % 3 == 2)
+printf("\n\tO resto da sua conta e  ; %.1d\n",i);
+else if (i % 5 == 3)
+printf("\n\tO resto da sua conta e  ; %.1d\n",i);
+else if (i % 7 == 4)
+printf("\n\tO resto da sua divisao e ; %.1d\n",i);
+else
+printf("O essa conta nao possuir resto por 2,3,4; ");
+printf("\n\n\tDeseja continuar? (1)- sim, (2)- -nao;");
+scanf("%d",&op);
+while (op!=1 && op!=2)
+{
+if(op!=1 && op!=2)
+{
+
+}
+}
+}
+}
