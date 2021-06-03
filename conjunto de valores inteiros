@@ -1,0 +1,32 @@
+//1 )– Faça um programa que receba um conjunto de valores inteiros e positivos, //calcule e
+//mostre o maior e o menor valor do conjunto.
+//ü Para encerrar a entrada de dados, deve ser digitado o valor zero;
+//ü Para valores negativos, deve ser enviada uma mensagem;
+//ü Esses valores (zero e negativos) não entraram nos cálculos.
+#include<stdio.h>
+#include<stdlib.h>
+
+main ()
+{
+     int num,mai=1,men=100000;
+     while(num!=0)
+     {
+     if(num<0)
+     {
+     printf("\n\n\n\tNumero invalido\n");
+      }
+      printf("\n\n\n\tEntre com o numero; ");
+     scanf("%d",&num);
+     if (num>mai)
+     {
+     mai=num;
+       }
+     else if(num<men && num>0 && num!=0)
+     {
+     men=num;
+       }
+     }
+     printf("\n\n\n\tNumero maior %d\n",mai);
+     printf("\n\n\n\tNumero menor %d\n",men);
+       system("pause");
+        }
