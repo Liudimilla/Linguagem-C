@@ -1,0 +1,44 @@
+# Linguagem-C
+#include<stdio.h>
+#include<stdlib.h>
+
+main()
+{
+
+     int t_eleitores, v_brancos, v_nulos, v_validos;
+     
+     float p_brancos, p_nulos, p_validos, t_total;
+   {  
+  printf("quantos eleitores" );
+ }
+  scanf("%d",&t_eleitores);  
+  {
+   printf("quantos votos em branco?");
+   }
+  scanf("%d",&v_brancos);  
+  {
+   printf("quantos votos nulos? ");
+   }
+  scanf("%d",&v_nulos);
+  {  
+   printf("quantos votos validos? ");
+   }
+  scanf("%d",&v_validos); 
+  
+  
+  t_total("p_brancos <- v_brancos/t_eleitores * 100");
+  {
+                printf ("p_brancos %.1f", t_total );
+                }
+  t_total("p_nulos <- v_nulos/t_eleitores * 100");
+  {
+                printf ("p_nulos %.1f", t_total );         
+  }
+  t_total("p_validos <- v_validos/t_eleitores * 100", t_total); 
+  {
+                
+                printf ("p_validos, %.1f" , t_total);
+    }                                 
+                                     
+system("pause");
+}
