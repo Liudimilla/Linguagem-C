@@ -27,7 +27,7 @@ int main() {
           res1 = m2 - m1;
         if (res1 < 0)
         {
-      
+      //
     res1 = 60 + (m2 - m1);
     res--;
 
