@@ -1,0 +1,31 @@
+/*Leia dois valores inteiros M e N indefinidamente. A cada leitura, calcule e escreva a soma dos fatoriais de cada um dos valores lidos. Utilize uma variável apropriada, pois cálculo pode resultar em um valor com mais de 15 dígitos.
+
+Entrada
+O arquivo de entrada contém vários casos de teste. Cada caso contém dois números inteiros M (0 ≤ M ≤ 20) e N (0 ≤ N ≤ 20). O fim da entrada é determinado por eof.
+
+Saída
+Para cada caso de teste de entrada, seu programa deve imprimir uma única linha, contendo um número que é a soma de ambos os fatoriais (de M e N).
+*/
+#include<stdio.h>
+
+main()
+{
+	long long int i,i1,n,n1;
+	long long int f1,f2;
+	f1=f2=1;
+	while(scanf("%lld %lld",&n,&n1) != EOF){
+		
+		for(i=1; i<=n; i++){
+			f1=f1 * i;
+		}
+		for(i1=1; i1<=n1; i1++){
+			f2=f2 * i1;
+		}
+		long long int sum = f1+f2;
+		printf("%lld\n",sum);
+		f1=f2=1;
+		
+	}
+	
+		
+}
