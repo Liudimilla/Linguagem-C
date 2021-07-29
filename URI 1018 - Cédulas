@@ -1,0 +1,38 @@
+/*Leia um valor inteiro. A seguir, calcule o menor número de notas possíveis (cédulas) no qual o valor pode ser decomposto. As notas consideradas são de 100, 50, 20, 10, 5, 2 e 1. A seguir mostre o valor lido e a relação de notas necessárias.
+
+Entrada
+O arquivo de entrada contém um valor inteiro N (0 < N < 1000000).
+
+Saída
+Imprima o valor lido e, em seguida, a quantidade mínima de notas de cada tipo necessárias, conforme o exemplo fornecido. Não esqueça de imprimir o fim de linha após cada linha, caso contrário seu programa apresentará a mensagem: “Presentation Error”.
+*/
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qtd,cel_100,cel_50,cel_20,cel_10,cel_5,cel_2,cel1,cel2,cel3,cel4,cel5,cel6;
+    scanf("%d",&qtd);
+ 
+    cel_100= qtd/100;
+     cel1=qtd%100;
+     cel_50= cel1/50;
+     cel2=cel1%50;
+     cel_20= cel2/20;
+     cel3=cel2%20;
+     cel_10= cel3/10;
+     cel4=cel3%10;
+      cel_5= cel4/5;
+     cel5=cel4%5;
+      cel_2= cel5/2;
+     cel6=cel5%2;
+    printf ("%d\n",qtd); 
+    printf ("%d nota(s) de R$ 100,00\n",cel_100);
+    printf ("%d nota(s) de R$ 50,00\n",cel_50);
+    printf ("%d nota(s) de R$ 20,00\n",cel_20);
+    printf ("%d nota(s) de R$ 10,00\n",cel_10);
+    printf ("%d nota(s) de R$ 5,00\n",cel_5);
+    printf ("%d nota(s) de R$ 2,00\n",cel_2);
+    printf ("%d nota(s) de R$ 1,00\n",cel6);
+ 
+    return 0;
+}
