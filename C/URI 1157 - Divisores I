@@ -1,0 +1,20 @@
+/*Ler um número inteiro N e calcular todos os seus divisores.
+
+Entrada
+O arquivo de entrada contém um valor inteiro.
+
+Saída
+Escreva todos os divisores positivos de N, um valor por linha.
+*/
+#include <stdio.h>
+int main()
+{
+int ent,val;
+scanf("%d",&ent);
+for(val=1;val<=ent;val++)
+{
+if(ent%val==0)
+printf("%d\n",val);
+}
+return 0;
+}
