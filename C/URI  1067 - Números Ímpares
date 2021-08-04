@@ -1,0 +1,23 @@
+/*Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o X, se for o caso.
+
+Entrada
+O arquivo de entrada contém 1 valor inteiro qualquer.
+
+Saída
+Imprima todos os valores ímpares de 1 até X, inclusive X, se for o caso. */
+ #include <stdio.h>
+ //Liudimilla Santos da Silva RA 2215205063;
+int main() {
+ 
+    int imp,num; 
+    int *p,*q;
+    p=&imp;
+    q=p; 
+    scanf("%d",&imp);  
+    for(num=1;num<=imp;num=num+2)  
+        printf("%d\n",num);  
+    scanf("&i",&imp); 
+ 
+    return 0;
+}
+ 
