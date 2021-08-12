@@ -1,0 +1,40 @@
+/*Leia 2 valores inteiros X e Y. A seguir, calcule e mostre a soma dos números impares entre eles.
+
+Entrada
+O arquivo de entrada contém dois valores inteiros.
+
+Saída
+O programa deve imprimir um valor inteiro. Este valor é a soma dos valores ímpares que estão entre os valores fornecidos na entrada que deverá caber em um inteiro.
+*/
+#include <stdio.h>
+ 
+int main() {
+ 
+    int i,a,b,temp,sum;
+    int *p,*q;
+    p=&sum;
+    q=p;
+    while(scanf("%d%d",&a,&b)==2){
+        sum=0;
+        if(a>b){
+            temp=a;
+            a=b;
+            b=temp;
+        }
+        if(a%2!=0){
+        for(i=a+2;i<b;i++){
+            if(i%2!=0)
+                sum+=i;
+            }
+        }
+        else{
+            for(i=a+1;i<b;i++){
+            if(i%2!=0)
+                sum+=i;
+            }
+        }
+        printf("%d\n",sum);
+    }
+ 
+    return 0;
+}
